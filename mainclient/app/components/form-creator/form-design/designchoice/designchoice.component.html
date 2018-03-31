@@ -1,0 +1,10 @@
+<div style="margin-top:50px">
+  <mat-form-field style="width:400px">
+    <input [(ngModel)]='choice.text' matInput placeholder="Type Choice">
+  </mat-form-field>
+  <mat-form-field style="width:100px">
+    <input type="number" matInput [(ngModel)]='choice.score' placeholder="Score">
+  </mat-form-field>
+  <button class='navbtn' mat-mini-fab color='primary' (click)="add()">+</button>
+  <button class='navbtn' mat-mini-fab color='warn' (click)="delete()">x</button>
+</div>

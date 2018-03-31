@@ -1,0 +1,9 @@
+{
+    "connectionString": "mongodb://localhost:27017/jarvis",
+    "apiUrl": "http://localhost:4000",
+    "secret": "PratikriyaSIH2018",
+    "mysqlhost":"127.0.0.1",
+    "mysqluser":"root",
+    "mysqlpassword":"who are you",
+    "mysqldb":"pratikriya"
+}

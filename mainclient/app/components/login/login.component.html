@@ -1,0 +1,23 @@
+<!-- Card container that binds all togather -->
+<mat-card>
+    <!-- Title of an Card -->
+    <mat-card-title>
+        LOGIN
+    </mat-card-title>
+
+    <!-- Actual content starts from here -->
+    <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="login()">
+            <mat-form-field class="demo-full-width">
+                <input #email matInput placeholder="Enter your email" required formControlName="email">
+                <mat-error>Enter proper organization email</mat-error>
+            </mat-form-field>
+            <mat-form-field class="demo-full-width">
+                <input #password matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" required formControlName="password">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary" [disabled]='!form.valid'>Drive</button>
+
+        </form>
+    </mat-card-content>
+</mat-card>
